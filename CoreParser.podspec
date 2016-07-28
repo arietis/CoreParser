@@ -1,19 +1,19 @@
 Pod::Spec.new do |s|
    s.name = 'CoreParser'
    s.version = '1.0'
-   s.license = 'AGIMA'
+   s.license = 'MIT'
 
    s.summary = 'Lib CoreParser'
    s.homepage = 'https://github.com/Klimowsa/CoreParser'
    s.author = 'RMR + AGIMA'
 
    s.source = { :git => 'https://github.com/Klimowsa/CoreParser.git', :tag => s.version }
-   s.source_files = 'Source/'
+   s.source_files = 'Source/CoreParser/**/*.{h,m}'
 
+   s.platform = :ios
    s.ios.deployment_target = '8.0'
-   s.osx.deployment_target = '10.10'
 
-   s.frameworks = 'CoreData'
+   s.frameworks = 'Realm'
 
    s.requires_arc = true
 end
